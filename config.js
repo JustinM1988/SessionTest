@@ -4,6 +4,6 @@
 //    e.g., "https://my-portal.domain.com/portal/sharing/rest"
 
 export const CONFIG = {
-  CLIENT_ID: "ic6BRtZvKEpNKVjS",
-  PORTAL: "https://www.arcgis.com/sharing/rest"
+  CLIENT_ID: ic6BRtZvKEpNKVjS,
+  PORTAL: https://cityofportland.maps.arcgis.com/sharing/rest
 };
