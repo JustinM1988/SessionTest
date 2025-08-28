@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Completing ArcGIS OAuth…</title>
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://unpkg.com;
+    connect-src 'self' https://www.arcgis.com https://*.arcgis.com https://*.maps.arcgis.com https://your-portal.example.com;
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: https:;
+    base-uri 'self';
+    form-action 'self' https://www.arcgis.com https://*.arcgis.com https://your-portal.example.com;
+  ">
+  <link rel="icon" href="data:,">
+  <style>
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      display:grid; place-items:center; min-height:100svh; color:#e7ebf3; background:#0b0d13; }
+    .box { padding:24px; border-radius:12px; background:#141824; border:1px solid #22283a;
+      width:min(720px, 92vw); }
+    .muted { color:#9aa4b2 }
+  </style>
+  <script src="https://unpkg.com/@esri/arcgis-rest-auth@3.8.0/dist/umd/auth.umd.min.js" defer></script>
+  <script src="./config.js" defer></script>
+  <script src="./callback.js" defer></script>
+</head>
+<body>
+  <div class="box">
+    <h1>Finishing sign-in…</h1>
+    <p class="muted">If this seems stuck, you can refresh this page.</p>
+    <pre id="log" style="white-space:pre-wrap;"></pre>
+  </div>
+</body>
+</html>
