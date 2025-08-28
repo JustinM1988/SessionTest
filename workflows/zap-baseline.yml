@@ -1,0 +1,17 @@
+name: ZAP Baseline Scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * 1'   # Mondays 07:00 UTC (optional)
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ZAP Baseline Scan
+        uses: zaproxy/action-baseline@v0.10.0
+        with:
+          target: 'https://justinm1988.github.io/SessionTest/'
+          rules_file_name: '.zap/rules.tsv'
+          allow_issue_writing: false
