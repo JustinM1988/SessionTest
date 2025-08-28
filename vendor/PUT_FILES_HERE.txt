@@ -1,0 +1,5 @@
+Place these two files in this folder (exact names):
+- auth.umd.min.js            (from @esri/arcgis-rest-auth@3.8.0/dist/umd/auth.umd.min.js)
+- request.umd.min.js         (from @esri/arcgis-rest-request@3.8.0/dist/umd/request.umd.min.js)
+
+Your redirect URL (must be in your ArcGIS app): https://justinm1988.github.io/SessionTest/callback.html
